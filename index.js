@@ -8,6 +8,7 @@ const request = require('request')
 const decode = require('html-entities');
 var stringSimilarity = require("string-similarity");
 // server / cron job
+var path = require('path');
 const express = require('express');
 const cron = require('node-cron');
 const app = express();
@@ -199,6 +200,7 @@ const getLastNews = async() => {
 
 // START SERVER / CRON JOB
 
+app.use(express.static(path.join(__dirname, 'public')));
 app.listen(3333, () => {
     console.log('running on port 3333');
     // cron format - todo dia 4/4 horas | 0 0 0/4 1/1 * ? *
