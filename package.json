@@ -1,0 +1,25 @@
+{
+  "name": "instaradio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs-temp": "^1.2.1",
+    "html-entities": "^2.3.2",
+    "keyword-extractor": "^0.0.19",
+    "node-cron": "^3.0.0",
+    "node-fetch": "^2.6.1",
+    "node-insta-web-api": "^1.3.3",
+    "request": "^2.88.2",
+    "socket.io": "^4.0.1",
+    "string-similarity": "^4.0.4",
+    "utf8": "^3.0.0"
+  }
+}
